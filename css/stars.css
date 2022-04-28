@@ -93,6 +93,7 @@
     border-radius: 50%;
 }
 
+/* Earth ball */
 .world {
     position: relative;
     -webkit-transform: translateZ(0);
@@ -106,10 +107,7 @@
     background: #2f7db4;
 }
 
-@media screen and (max-width: 809px) {
-
-}
-
+/* Earth shadow */
 .world:before {
     box-shadow: inset -30px 0 0 -10px rgba(0, 0, 0, 0.3);
     border-radius: 50%;
@@ -124,6 +122,7 @@
     zoom: 3;
 }
 
+/* Land and cloud pieces */
 .world:after {
     border-radius: 6px;
     -webkit-animation: world-animation 14s linear 0s infinite;
@@ -137,6 +136,64 @@
     height: 12px;
     background: none;
     z-index: 10;
+}
+
+@media screen and (max-width: 414px) {
+    .world-wrapper {
+        position: absolute;
+        left: 50%;
+        top: 20px;
+        margin-left: -68px;
+        border-radius: 50%;
+    }
+
+    .world {
+        position: relative;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        overflow: hidden;
+        border-radius: 50%;
+        z-index: 10;
+        display: inline-block;
+        width: 130px;
+        height: 130px;
+        background: #2f7db4;
+    }
+    
+    .world:before {
+        box-shadow: inset -20px 0 0 -10px rgba(0, 0, 0, 0.3);
+        border-radius: 50%;
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: transparent;
+        z-index: 50;
+        zoom: 3;
+    }
+    
+    .world:after {
+        border-radius: 6px;
+        -webkit-animation: world-animation 14s linear 0s infinite;
+        animation: world-animation 14s linear 0s infinite;
+        zoom: 1;
+        content: " ";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 18px;
+        height: 12px;
+        background: none;
+        z-index: 10;
+    }
+}
+
+.rocket-container {
+    position: absolute;
+    left: -15px;
+    bottom: 15px;
 }
 
 .rocket {
@@ -310,6 +367,203 @@
     animation: wasting 500ms infinite 500ms;
 }
 
+@media screen and (max-width: 414px) {
+    .rocket {
+        z-index: 20;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        -webkit-transform: rotate(-35deg);
+        transform: rotate(-35deg);
+        -webkit-animation: orbit 2s linear infinite;
+        animation: orbit 2s linear infinite;
+    }
+    
+    /* Rocket size + proportion */
+    .rocket .rocket-body {
+        /* Length of rocket */
+        width: 40px;
+        /* Width of rocket */
+        height: 12px;
+        background-color: #d11c40;
+        position: absolute;
+        border-bottom-right-radius: 100%;
+        border-top-right-radius: 100%;
+        border-left: 3px solid #5b595d;
+        border-right: 3px solid #D11C40;
+        -webkit-animation: wiggling ease-out 300ms infinite;
+        animation: wiggling ease-out 300ms infinite;
+    }
+    
+    /* Rocket pieces */
+    .rocket .rocket-body:before,
+    .rocket .rocket-body:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 51%;
+        top: 50%;
+        /* Rocket fuselage bottom shade */
+        height: 50%;
+        background-color: #a71732;
+    }
+    
+    /* Rocket shadow bottom position */
+    .rocket .rocket-body:before {
+        right: 0;
+        border-bottom-right-radius: 100%;
+    }
+    
+    /* Rocket shadow */
+    .rocket .rocket-body:after {
+        left: -3px;
+        border-left: 3px solid #444244;
+    }
+    
+    /* Overall size of the fins */
+    .rocket .rocket-body .fin-top,
+    .rocket .rocket-body .fin-bottom {
+        position: absolute;
+        /* Fin position */
+        left: -4px;
+        width: 5px;
+        height: 5px;
+        background-color: #7f0e27;
+        border-left: 3px solid #D11C40;
+    }
+    
+    /* Angled edge of the fins */
+    .rocket .rocket-body .fin-top:before,
+    .rocket .rocket-body .fin-bottom:before {
+        content: '';
+        position: absolute;
+        /* Fin position */
+        left: 2px;
+        width: 5px;
+        height: 100%;
+        background-color: #7f0e27;
+        bottom: 0;
+    }
+    
+    /* Left fin position */
+    .rocket .rocket-body .fin-top {
+        top: -5px;
+        -webkit-transform: skew(35deg, 0deg);
+        transform: skew(35deg, 0deg);
+    }
+    
+    .rocket .rocket-body .fin-top:before {
+        -webkit-transform: skew(40deg, 0deg);
+        transform: skew(40deg, 0deg);
+    }
+    
+    /* Right fin position */
+    .rocket .rocket-body .fin-bottom {
+        bottom: -5px;
+        -webkit-transform: skew(-35deg, 0deg);
+        transform: skew(-35deg, 0deg);
+    }
+    
+    .rocket .rocket-body .fin-bottom:before {
+        -webkit-transform: skew(-40deg, 0deg);
+        transform: skew(-40deg, 0deg);
+    }
+    
+    /* Rocket flame position */
+    .rocket .rocket-body .faya {
+        position: absolute;
+        display: block;
+        /* bottom: 2px; */
+        /* Distance of flame from rocket base */
+        left: -33px;
+        /* Length of the flame */
+        width: 30px;
+        /* Width of the flame */
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .rocket .rocket-body .faya:before {
+        position: absolute;
+        content: '';
+        display: block;
+        /* How thick the orange part of the flame will be */
+        width: 100px;
+        height: 14px;
+        left: 0;
+        top: 0;
+        border-radius: 100%;
+        background-color: #f45224;
+        -webkit-animation: vrouming 200ms infinite;
+        animation: vrouming 200ms infinite;
+    }
+    
+    /* Flame colours */
+    .rocket .rocket-body .faya:after {
+        position: absolute;
+        content: '';
+        display: block;
+        /* Inner white flame properties */
+        width: 220spx;
+        height: 10px;
+        left: 10px;
+        top: 2px;
+        border-radius: 100%;
+        background-color: #ffedd5;
+        -webkit-animation: vrouming 200ms infinite;
+        animation: vrouming 200ms infinite;
+    }
+    
+    /* Particle trailing effects */
+    .rocket .rocket-body .wastes {
+        position: absolute;
+        /* Distance away from rocket */
+        left: -53px;
+        /* Distance away from rocket base left and right (X axis) */
+        top: -13px;
+        width: 50px;
+        height: 200%;
+    }
+    
+    .rocket .rocket-body .wastes span {
+        position: absolute;
+        width: 3px;
+        right: 0;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .rocket .rocket-body .wastes span:nth-child(1) {
+        top: 15px;
+        -webkit-animation: wasting 500ms infinite 100ms;
+        animation: wasting 500ms infinite 100ms;
+    }
+    
+    .rocket .rocket-body .wastes span:nth-child(2) {
+        top: 17px;
+        -webkit-animation: wasting2 500ms infinite 200ms;
+        animation: wasting2 500ms infinite 200ms;
+    }
+    
+    .rocket .rocket-body .wastes span:nth-child(3) {
+        top: 19px;
+        -webkit-animation: wasting 500ms infinite 300ms;
+        animation: wasting 500ms infinite 300ms;
+    }
+    
+    .rocket .rocket-body .wastes span:nth-child(4) {
+        top: 21px;
+        -webkit-animation: wasting2 500ms infinite 400ms;
+        animation: wasting2 500ms infinite 400ms;
+    }
+    
+    .rocket .rocket-body .wastes span:nth-child(5) {
+        top: 23px;
+        -webkit-animation: wasting 500ms infinite 500ms;
+        animation: wasting 500ms infinite 500ms;
+    }
+}
+
 @-webkit-keyframes wiggling {
     0% {
         -webkit-transform: translate3d(0px, 0px, 0);
@@ -446,7 +700,7 @@
     }
 }
 
-/* Floating */
+/* Floating Astronaut */
 .floating {
     animation-name: floating;
     animation-duration: 3s;

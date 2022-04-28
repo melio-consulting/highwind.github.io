@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-	<meta name="generator" content="Hugo 0.97.3" />
+	<meta name="generator" content="Hugo 0.97.0" />
 
     <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -27,7 +27,36 @@
 </script>
 
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+    $(function () {
+    $(document).scroll(function () {
+        var $nav = $(".navbar-text-colour");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+    });
 
+    $(function () {
+    $(document).scroll(function () {
+        var $nav = $(".navbar-toggle-colour");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+    });
+
+    $(function () {
+    $(document).scroll(function () {
+        var $nav = $(".nav-text-logo-left");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+    });
+
+    $(function () {
+    $(document).scroll(function () {
+        var $nav = $(".nav-text-logo-right");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+    });
+</script>
 <title>HIGHWIND</title>
 <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 
@@ -232,8 +261,6 @@
 
 <link rel="stylesheet" href="https://highwind.ai/css/stars.css"/>
 
-<link rel="stylesheet" href="https://highwind.ai/css/text-fonts.css"/>
-
 
     
 
@@ -245,10 +272,10 @@
 	<header class="header fixed-top rad-animation-group" id="header">
 	<div class="container rad-fade-in">
 		<nav class="navbar navbar-expand-lg navbar-light">
-			<a class="navbar-brand nav-text" href="https://highwind.ai/">
-				HIGHWIND
+			<a class="navbar-brand nav-text navbar-text-colour" href="https://highwind.ai/">
+				<h1 class="nav-text-logo-left"><span style="display: inline;">HIGH</span><span class="nav-text-logo-right" style="display: inline;">WIND</span></h1>
 			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse"
+			<button class="navbar-toggler navbar-toggle-colour" type="button" data-toggle="collapse"
 				data-target="#navbarSupportedContent, #header" aria-controls="navbarSupportedContent"
 				aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -257,23 +284,23 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-lg-auto">
 					<li class="nav-item">
-						<a class="nav-link" href="https://highwind.ai/">HOME</a>
+						<a class="nav-link navbar-text-colour" href="https://highwind.ai/">HOME</a>
 					</li>
 					
 					<li class="nav-item">
-						<a data-scroll class="nav-link" href="#section2">ABOUT</a>
+						<a data-scroll class="nav-link navbar-text-colour" href="#about">ABOUT</a>
 					</li>
 					
 					<li class="nav-item">
-						<a data-scroll class="nav-link" href="#section4">MARKETPLACE</a>
+						<a data-scroll class="nav-link navbar-text-colour" href="#marketplace">MARKETPLACE</a>
 					</li>
 					
 					<li class="nav-item">
-						<a data-scroll class="nav-link" href="#section3">USES</a>
+						<a data-scroll class="nav-link navbar-text-colour" href="#details">DETAILS</a>
 					</li>
 					
 					<li class="nav-item">
-						<a data-scroll class="nav-link" href="#contact">CONTACT</a>
+						<a data-scroll class="nav-link navbar-text-colour" href="#contact">CONTACT</a>
 					</li>
 					
 				</ul>
@@ -299,14 +326,17 @@
 		</div>
 		<div class="container stars-header-container">
 			<h1 class="stars-header-1">TAKE YOUR AI TO THE STARS WITH</h1>
-			<h1 class="stars-header-2"><span style="display: inline;">HIGH</span><span style="color: orange; display: inline;">WIND</span></h1>	
+			<h1 class="stars-header-2"><span style="display: inline;">HIGH</span><span style="color: #ef9035; display: inline;">WIND</span></h1>
+			<h2 class="stars-header-1" style="margin-top: 20px;">THE ONLY AI MODEL BENCHMARKING PLATFORM</h2>
 		</div>
 
 		<div class="container stars-rocket">
+			
 			<div class="world-wrapper">
 				<div class="world"></div>
 				<div class="rocket">
-					<div class="rocket-body">
+					
+					<div class="rocket-body rocket-container">
 						<div class="fin-top"></div>
 						<div class="fin-bottom"></div>
 						<div class="faya"></div>
@@ -319,47 +349,131 @@
 			<img class="img-astronaut floating" src="/img/space/astronaut.png" alt="Astronaut">
 		</div>
 
-		<div class="container stars-button">
-			<a href="#section1" class="btn btn-large btn-warning btn-rounded">
-				<span style="font-size: 20px; color: #fff;">Blast off!</span>
+		<div class="container stars-button-container">
+			<a href="#solution" class="btn btn-large btn-background btn-rounded">
+				<span style="font-size: 20px; color: #fff;">BLAST OFF!</span>
 			</a>
-		</div>
-		
-		
+		</div>		
 	</div>
-
-
 </section>
 
 		
 		
-<section class="container section-top-portion rad-animation-group" id="section1">
-	<div class="container section-container">
-		<div class="row rad-fade-down section-row-media">
-			<div class="col">
-				<h1 class="section-header">HOUSTON, WE HAVE A <span
-					style="color: orange; display: inline-block;">SOLUTION</span></h1>
+<section class="container section-top-portion rad-animation-group" id="solution">
+	<div class="container section-container rad-fade-down">
+		<div class="section-row-media">
+			<h1 class="section-header">HOUSTON, WE HAVE A <span
+					style="color: #ef9035; display: inline-block;">SOLUTION</span></h1>
+			
+			<hr class="rounded-separator">
+			
+			<p class="section-text">
 				
-			</div>
+				How well does your AI model perform? Is your AI model up to scratch with the competition? Easily benchmark and optimise your AI against
+				the industry's best.
+				<br>
+				
+			</p>
 		</div>
-		<div class="row rad-fade-down section-row-media">
 
-			<div class="col-lg-9">
-				<p class="section-text">
-					
-					Introducing HIGHWIND, a platform for anyone to quickly benchmark and compare your AI solutions
-					against the best in the industry. HIGHWIND is the only platform that can quantify how much value is
-					being extracted from your data using unbiased and open model benchmarks.
-					<br><br>
-					Using the latest in cloud technology, HIGHWIND helps organisations train, deploy, buy, and sell their machine learning models
-					easily.
-				</p>
+		<div class="section-img-positioning-logos">
+			<img src="/img/logos/azure.png" class="section-img-logos " alt="Azure">
+			<img src="/img/logos/aws.png" class="section-img-logos" alt="AWS">
+			<img src="/img/logos/google-cloud.png" class="section-img-logos " alt="Google Cloud">
+		</div>
+	</div>
+
+</section>
+
+		
+		
+<section class="container section-mid-portion rad-animation-group" id="about">
+
+	<div class="container section-container">
+		<div class="section-row-media">
+			<h1 class="section-header">YOU'RE THE <span style="color: #ef9035; display: inline-block;">PILOT</span></h1>
+			
+			<hr class="rounded-separator">
+			<p class="section-text">
+				
+				HIGHWIND is designed for all users in mind. Whether you're a professional data scientist or a business
+				owner, make informed and data-driven decisions.
+				
+			</p>
+		</div>
+
+		<div class="row rad-fade-down card-row">
+			<div class="col card-col">
+				<div class="card card-cent-pos">
+					<img src="/img/space/flying.png" class="card-image" alt="Flying astronaut">
+					<div class="card-body">
+						<h2 class="section-sub-header-text">FASTER THAN LIGHT</h2>
+						<p class="card-text">
+							Quickly insight on your model's performance. Optimise it for cost savings and higher returns.
+						</p>
+					</div>
+				</div>
 			</div>
-
-			<div class="col-lg-3 section-img-positioning">
-				<img class="section-img" src="/img/space/planet-earth.png" alt="Rocket flying">
+			<div class="col card-col">
+				<div class="card card-cent-pos">
+					<img src="/img/space/engineer.png" class="card-image" alt="Space engineer">
+					<div class="card-body">
+						<h2 class="section-sub-header-text">NO ROCKET SCIENCE NEEDED</h2>
+						<p class="card-text">
+							HIGHWIND is designed for users of any background in mind.
+						</p>
+					</div>
+				</div>
 			</div>
+			<div class="col card-col">
+				<div class="card card-cent-pos">
+					<img src="/img/space/satellite.png" class="card-image" alt="Satellite in space">
+					<div class="card-body">
+						<h2 class="section-sub-header-text">HEADS UP</h2>
+						<p class="card-text">
+							Aggregate and compare your results from different cloud service providers and pre-trained
+							models.
+							<br>
+						</p>
+					</div>
+				</div>
+			</div>	
+		</div>
 
+		<div class="row rad-fade-down card-row">
+			<div class="col card-col">
+				<div class="card card-cent-pos">
+					<img src="/img/space/planetary.png" class="card-image" alt="Computer with reports">
+					<div class="card-body">
+						<h2 class="section-sub-header-text">INTELLIGENT REPORTS</h2>
+						<p class="card-text">
+							Have an AutoBI dashboard to check for data intricacies.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col card-col">
+				<div class="card card-cent-pos">
+					<img src="/img/space/space-shuttle.png" class="card-image" alt="Space shuttle about to launch">
+					<div class="card-body">
+						<h2 class="section-sub-header-text">AUTOMATED DEPLOYMENT</h2>
+						<p class="card-text">
+							Choose any of the AI models from the marketplace and seamlessly deploy it for your organisation.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col card-col">
+				<div class="card card-cent-pos">
+					<img src="/img/space/moon.png" class="card-image" alt="Moon with flag">
+					<div class="card-body">
+						<h2 class="section-sub-header-text">OPTIMISED SOLUTIONS</h2>
+						<p class="card-text">
+							HIGHWIND provides the best option based on your requirements at the lowest cost.
+						</p>
+					</div>
+				</div>
+			</div>
 		</div>
 
 	</div>
@@ -367,190 +481,70 @@
 
 		
 		
-<section class="container section-mid-portion rad-animation-group pb-0" id="section2">
+<section class="container section-mid-portion rad-animation-group" id="marketplace">
+	<div class="container section-container rad-fade-down">
+		<div class="section-row-media">
+			<h1 class="section-header">TAKE PART BY JOINING <span
+					style="color: #ef9035; display: inline-block;">MISSION CONTROL</span></h1>
+			
+			<hr class="rounded-separator">
+			
+			<p class="section-text">
+				
+				Build, test, buy, and sell your own AI models on the HIGHWIND marketplace. Easily find and compare the best solutions for your organisation.
+				
+			</p>
+		</div>
+	</div>
+</section>
+
+		
+		
+<section class="container section-mid-portion rad-animation-group pb-0" id="details">
 	<div class="container">
 		<div class="row rad-fade-down section-row-media">
 			<div class="col">
-				<h1 class="section-header">DON'T GET <span style="color: orange; display: inline;">LOST</span> IN SPACE
-				</h1>
+				<h1 class="section-header">DON'T GET LOST IN <span
+						style="color: #ef9035; display: inline-block;">SPACE</span></h1>
 				
-			</div>
-		</div>
-
-		<div class="row rad-fade-down">
-
-			<div class="col-lg-3 section-img-positioning">
-				<img class="section-img section-img-mediaquery" src="/img/space/solar-system.png" alt="Solar System">
-			</div>
-
-			<div class="col-lg-9">
-
+				<hr class="rounded-separator">
+				
 				<p class="section-text">AI and machine learning is a huge field. HIGHWIND gives back your time to focus
-					on the important things: bringing business value to your organisation. Save time and costs by knowing if your current model is worth
+					on the important things: bringing business value to your organisation. Save time and costs by
+					knowing if your current model is worth
 					deploying.<br><br>
 					By handling the technical aspects of machine learning and AI, HIGHWIND provides its users
 					with an easy end-to-end solution measured by model metrics and key performance indicators. Simply
 					load your data and receive story explanations with predictions, then prepare for blast off!
 				</p>
 			</div>
-
 		</div>
-		
 	</div>
 </section>
 
 		
 		
-<section class="container section-mid-portion rad-animation-group" id="section4">
-	<div class="container section-container">
-		<div class="row rad-fade-down section-row-media">
-			<div class="col">
-				<h1 class="section-header">TAKE PART BY JOINING <span
-						style="color: orange; display: inline-block;">MISSION CONTROL</span></h1>
-				
-			</div>
-		</div>
-
-		<div class="row rad-fade-down">
-
-			<div class="col-lg-9">
-
-				<p class="section-text">
-					
-					Data scientists and academics are able to easily and quickly test out their models on HIGHWIND which
-					they can then
-					offer in the marketplace.<br><br> These models are benchmarked and sorted with explainability and fairness
-					in mind. Organisations are then able to compare the different models and choose the right solution
-					for the right price.
-				</p>
-			</div>
-
-			<div class="col-lg-3 section-img-positioning">
-				<img class="section-img" src="/img/space/control-room.png" alt="Rocket flying">
-			</div>
-
-		</div>
-
-	</div>
-</section>
-
-		
-		
-<section class="container section-mid-portion rad-animation-group" id="section3">
-	<div class="container section-container">
-		
-		<div class="row rad-fade-down">
-
-			<div class="col">
-				<h1 class="section-header" style="text-align: center;">YOU'RE THE <span style="color: orange; display: inline-block;">PILOT</span>
-				</h1>
-				<h2 class="section-sub-header" style="text-align: center;">
-					Take control with HIGHWIND, the galaxy is yours
-				</h2>
-			</div>
-
-			
-
-		</div>
-	</div>
-
-
-	<div class="row rad-fade-down card-row">
-		<div class="col card-col">
-			<div class="card card-cent-pos">
-				<img src="/img/space/rocket-science.png" class="card-img-top card-image" alt="...">
-				<div class="card-body">
-					<h2 class="section-sub-header-text">BENCHMARK THE COMPETITION</h2>
-					<p class="card-text">
-						See how your model fairs against the best in the industry. Quickly optimise your model or get a better one.
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="col card-col">
-			<div class="card card-cent-pos">
-				<img src="/img/space/engineer.png" class="card-img-top card-image" alt="...">
-				<div class="card-body">
-					<h2 class="section-sub-header-text">NO ROCKET SCIENCE NEEDED</h2>
-					<p class="card-text">
-						HIGHWIND is designed with all users in mind, no coding background is needed.
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="col card-col">
-			<div class="card card-cent-pos">
-				<img src="/img/space/satellite.png" class="card-img-top card-image" alt="...">
-				<div class="card-body">
-					<h2 class="section-sub-header-text">HEADS UP</h2>
-					<p class="card-text">
-						Aggregate and compare your results from different cloud service providers and pre-trained models.
-						<br>
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="col card-col">
-			<div class="card card-cent-pos">
-				<img src="/img/space/planetary.png" class="card-img-top card-image" alt="...">
-				<div class="card-body">
-					<h2 class="section-sub-header-text">INTELLIGENT REPORTS</h2>
-					<p class="card-text">
-						Have an AutoBI dashboard to check for data intricacies.
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="col card-col">
-			<div class="card card-cent-pos">
-				<img src="/img/space/space-shuttle.png" class="card-img-top card-image" alt="...">
-				<div class="card-body">
-					<h2 class="section-sub-header-text">AUTOMATED DEPLOYMENT</h2>
-					<p class="card-text">
-						Choose one of our AI models and seamlessly deploy it for your organisation.
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="col card-col">
-			<div class="card card-cent-pos">
-				<img src="/img/space/moon.png" class="card-img-top card-image" alt="...">
-				<div class="card-body">
-					<h2 class="section-sub-header-text">OPTIMISED SOLUTIONS</h2>
-					<p class="card-text">
-						HIGHWIND provides the best option based on your requirements at the lowest cost.
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	
-</section>
-
-		
-		
-<section class="container section-mid-portion contact-section rad-animation-group" id="#contact">
+<section class="container section-mid-portion contact-section rad-animation-group" id="contact">
 	<div class="container section-container contact-container">
+		
 		<div class="contact">
-			<h2>Contact</h2>
+			<h2 class="contact-header">Contact</h2>
 			<div class="row pt-2">
 				<div class="col-12 col-lg-7">
-					<form action="#"
-						method="POST">
+					<form target="_blank" action="https://formsubmit.co/blastoff@highwind.ai" method="POST">
 						<div class="row">
 							<div class="col-12 col-sm-6">
-								<input type="text" name="" id="full_name"
+								<input class="contact-box" type="text" name="name" id="full_name"
 									placeholder="Full Name" />
 							</div>
 							<div class="col-12 col-sm-6">
-								<input type="text" name="" id="email"
+								<input class="contact-box" type="text" name="email" id="email"
 									placeholder="Email Address" />
 							</div>
 						</div>
 						<div class="row pt-4">
 							<div class="col-12">
-								<textarea name="" id="message" cols="30" rows="3"
+								<textarea class="contact-box" name="message" id="message" cols="30" rows="3"
 									placeholder="Type Your Message Here"></textarea>
 							</div>
 						</div>
@@ -566,11 +560,10 @@
 				</div>
 				<div class="col-12 col-lg-5 contact__info">
 					<h4>Phone Number</h4>
-					<span>&#43;27 11 123 4567</span>
+					<span>&#43;27 (76) 908-8968</span>
 					<h4>Email</h4>
 					<span><a href="mailto:blastoff@highwind.ai">blastoff@highwind.ai</a></span>
-					<h4>Address</h4>
-					<span>Johannesburg</span>
+					
 				</div>
 			</div>
 		</div>
@@ -584,24 +577,25 @@
 
 
 	<footer class="footer">
-  <div class="container">
-    <div class="footer__left">
-      <div class="footer__copy">
-        © HIGHWIND. All rights reserved.
-      </div>
-    </div>
-    <div class="footer__links">
-      <ul class="navbar-nav ">
-        <li class="nav-item">
-          <a class="nav-link" href="/">HOME</a>
-        </li>
-        
-      </ul>
-    </div>
-    
-  </div>
-</footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md" style="text-align: center; padding: 20px;">
+				
+				<h1 class="stars-header-2" style="font-size: 31px;"><span style="display: inline;">HIGH</span><span style="color: #ef9035; display: inline;">WIND</span></h1>
+				<h1 class="stars-header-2" style="font-size: 18px;"><span style="display: inline;">Faster than Light</span></h1>	
+			</div>
+			
+			<div class="col-md" style="padding: 20px;">
+				<h5 class="footer-header">About Melio AI</h1>
+				<p class="footer-text">
+					We specialise in developing and deploying machine learning solutions in the cloud. Melio has
+					experience across financial, telecommunications and entertainment industries.
+				</p>
 
+			</div>
+		</div>
+	</div>
+</footer>
     <script src='https://highwind.ai/js/rad-animations.js'></script>
 <script src='https://highwind.ai/js/library/lozad.min.js'></script>
 <script>
