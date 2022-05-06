@@ -670,3 +670,7 @@
 .footer-text {
     color: #fff;
 }
+
+.footer-text:hover {
+    color: #fff;
+}
