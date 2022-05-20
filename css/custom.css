@@ -140,6 +140,50 @@
     }
 }
 
+@media screen and (max-width: 767px) {
+    .navbar-text-colour {
+        color: white !important;
+        visibility: hidden;
+    }
+
+    .navbar-text-colour.scrolled {
+        color: white !important;
+        visibility: visible;
+    }
+
+    .nav-text-logo-left {
+        font-family: 'Akshar', sans-serif;
+        font-weight: 400;
+        font-size: 25px !important;
+        color: #000;
+        padding-top: 20px;
+        margin-bottom: 0;
+    }
+    
+    .nav-text-logo-right {
+        font-family: 'Akshar', sans-serif;
+        font-weight: 400;
+        font-size: 25px !important;
+        color: #000;
+        padding-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .nav-text-logo-left.scrolled {
+        font-family: 'Akshar', sans-serif;
+        font-weight: 400;
+        font-size: 25px !important;
+        color: #fff;
+    }
+    
+    .nav-text-logo-right.scrolled    {
+        font-family: 'Akshar', sans-serif;
+        font-weight: 400;
+        font-size: 25px !important;
+        color: #ef9035;
+    }
+}
+
 @media screen and (max-width: 990px) {
     .navbar-text-colour {
         color: white !important;
