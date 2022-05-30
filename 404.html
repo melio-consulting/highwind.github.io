@@ -237,6 +237,14 @@
 					</li>
 					
 					<li class="nav-item">
+						<a data-scroll class="nav-link navbar-text-colour" href="#solution">SOLUTION</a>
+					</li>
+					
+					<li class="nav-item">
+						<a data-scroll class="nav-link navbar-text-colour" href="#use">USE CASE</a>
+					</li>
+					
+					<li class="nav-item">
 						<a data-scroll class="nav-link navbar-text-colour" href="#about">ABOUT</a>
 					</li>
 					
@@ -287,7 +295,7 @@
 				<p class="footer-text">
 					World and rocket animation made by <a href="http://codepen.io/superoak" title="Codepen Superoak" class="footer-text">Luiz Otávio</a>.
 				</p>
-				
+				<a href="https://www.freepik.com/vectors/city-map" class="footer-text">City map vector created by macrovector - www.freepik.com</a>
 			</div>
 
 			<div class="col-md" style="padding: 20px;">
@@ -301,7 +309,7 @@
 
 		</div>
 	</div>
-</footer> <script src='https://highwind.ai/js/rad-animations.js'></script>
+</footer> <script src='https://highwind.ai/js/rad-animations.min.js'></script>
 <script src='https://highwind.ai/js/library/lozad.min.js'></script>
 <script>
   window.addEventListener("load", function() {
@@ -312,11 +320,13 @@
     observer.observe();
   });
 </script>
-<script src='https://highwind.ai/js/library/jquery-3.3.1.slim.min.js'></script>
+<script src='https://highwind.ai/js/library/jquery-3.6.0.min.js'></script>
+
 <script src='https://highwind.ai/js/library/bootstrap.min.js'></script>
-<script src='https://highwind.ai/js/sticky-header.js'></script>
+<script src='https://highwind.ai/js/sticky-header.min.js'></script>
 <script src='https://highwind.ai/js/library/smooth-scroll.polyfills.min.js'></script>
-<script src='https://highwind.ai/js/library/fontfaceobserver.js'></script>
+<script src='https://highwind.ai/js/library/fontfaceobserver.min.js'></script>
+<script src='https://highwind.ai/js/library/lazysizes.min.js'></script>
 <script>
   (function(w) {
     
@@ -354,6 +364,50 @@
         $('.navbar-toggler').click();
       }
     })
+</script>
+
+
+<script>
+  $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".navbar-text-colour");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+  });
+
+  $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".navbar-toggle-colour");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+  });
+
+  $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".nav-text-logo-left");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+  });
+
+  $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".nav-text-logo-right");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+  });
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EM309E0J9C"></script>
+<script async> 
+window.dataLayer = window.dataLayer || [];
+
+function gtag() {
+  dataLayer.push(arguments);
+}
+gtag('js', new Date());
+
+gtag('config', 'G-EM309E0J9C');
 </script>
 
   </body>

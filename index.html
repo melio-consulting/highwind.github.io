@@ -5,278 +5,28 @@
 <head>
 	<meta name="generator" content="Hugo 0.99.1" />
 
-    <meta charset="UTF-8" />
+	<meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<script>
-    (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-            'gtm.start': new Date().getTime(),
-            event: 'gtm.js'
-        });
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src =
-            'https://www.googletagmanager.com/gtm.js?id=GTM-000000' + i + dl;
-        f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-000000');
-</script>
 
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script>
-    $(function () {
-        $(document).scroll(function () {
-            var $nav = $(".navbar-text-colour");
-            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-        });
-    });
 
-    $(function () {
-        $(document).scroll(function () {
-            var $nav = $(".navbar-toggle-colour");
-            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-        });
-    });
 
-    $(function () {
-        $(document).scroll(function () {
-            var $nav = $(".nav-text-logo-left");
-            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-        });
-    });
-
-    $(function () {
-        $(document).scroll(function () {
-            var $nav = $(".nav-text-logo-right");
-            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-        });
-    });
-</script>
 <title>HIGHWIND</title>
 <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 
-<style>
-     
-     
-    .rad-fade-in {
-        will-change: opacity, transform;
-        animation-name: rad-fade-in-fallback;
-        animation-duration: 5s;
-        animation-fill-mode: both;
-    }
 
-    @keyframes rad-fade-in-fallback {
-        0% {
-            opacity: 0;
-        }
+<link rel="stylesheet" href="https://highwind.ai/css/main.min.css" />
 
-        75% {
-            opacity: 0;
-        }
+<link rel="stylesheet" href="https://highwind.ai/css/rad-icons.min.css" />
 
-        100% {
-            opacity: 1;
-        }
-    }
+<link rel="stylesheet" href="https://highwind.ai/css/custom.min.css" />
 
-    .fonts-loaded .rad-fade-in.rad-waiting {
-        animation-name: none;
-        opacity: 0;
-    }
-
-    .fonts-loaded .rad-fade-in.rad-animate {
-        animation-name: rad-fade-in;
-        animation-duration: 1.1s;
-        animation-fill-mode: both;
-    }
-
-    @keyframes rad-fade-in {
-        0% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
-
-     
-    .rad-fade-in-long {
-        will-change: opacity, transform;
-        animation-name: rad-fade-in-long-fallback;
-        animation-duration: 8s;
-        animation-fill-mode: both;
-    }
-
-    @keyframes rad-fade-in-long-fallback {
-        0% {
-            opacity: 0;
-        }
-
-        75% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
-
-    .fonts-loaded .rad-fade-in-long.rad-waiting {
-        animation-name: none;
-        opacity: 0;
-    }
-
-    .fonts-loaded .rad-fade-in-long.rad-animate {
-        animation-name: rad-fade-in-long;
-        animation-duration: 2s;
-        animation-fill-mode: both;
-    }
-
-    @keyframes rad-fade-in-long {
-        0% {
-            opacity: 0;
-        }
-
-        20% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
-
-     
-    .rad-fade-down {
-        will-change: opacity, transform;
-        animation-name: rad-fade-down-fallback;
-        animation-duration: 5s;
-        animation-fill-mode: both;
-        transform: translateY(-30px);
-    }
-
-    @keyframes rad-fade-down-fallback {
-        0% {
-            opacity: 0;
-            transform: translateY(-30px);
-        }
-
-        75% {
-            opacity: 0;
-            transform: translateY(-30px);
-        }
-
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    .fonts-loaded .rad-fade-down.rad-waiting {
-        animation-name: none;
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-
-    .fonts-loaded .rad-fade-down.rad-animate {
-        animation-name: rad-fade-down;
-        animation-duration: 1.1s;
-    }
-
-    @keyframes rad-fade-down {
-        0% {
-            opacity: 0;
-            transform: translateY(-30px);
-        }
-
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-     
-    .rad-scale-down {
-        will-change: opacity, transform;
-        animation-name: rad-scale-down-fallback;
-        animation-duration: 5s;
-        animation-fill-mode: both;
-        transform-origin: 50% 0;
-    }
-
-    @keyframes rad-scale-down-fallback {
-        0% {
-            opacity: 0;
-            transform: scaleY(0.95);
-        }
-
-        75% {
-            opacity: 0;
-            transform: scaleY(0.95);
-        }
-
-        100% {
-            opacity: 1;
-            transform: scaleY(1);
-        }
-    }
-
-    .fonts-loaded .rad-scale-down.rad-waiting {
-        animation-name: none;
-        opacity: 0;
-        transform: scaleY(0.95);
-    }
-
-    .fonts-loaded .rad-scale-down.rad-animate {
-        animation-name: rad-scale-down;
-        animation-duration: 1.1s;
-        animation-fill-mode: both;
-    }
-
-    @keyframes rad-scale-down {
-        0% {
-            opacity: 0;
-            transform: scaleY(0.95);
-        }
-
-        100% {
-            opacity: 1;
-            transform: scaleY(1);
-        }
-    }
-</style>
+<link rel="stylesheet" href="https://highwind.ai/css/stars.min.css" />
 
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EM309E0J9C"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'G-EM309E0J9C');
-</script>
-
-
-<link rel="stylesheet" href="https://highwind.ai/css/main.css" />
-
-<link rel="stylesheet" href="https://highwind.ai/css/rad-icons.css" />
-
-<link rel="stylesheet" href="https://highwind.ai/css/custom.css" />
-
-<link rel="stylesheet" href="https://highwind.ai/css/stars.css" />
-
-
-    
+	
 
 
 </head>
@@ -299,6 +49,14 @@
 				<ul class="navbar-nav ml-lg-auto">
 					<li class="nav-item">
 						<a class="nav-link navbar-text-colour" href="https://highwind.ai/">HOME</a>
+					</li>
+					
+					<li class="nav-item">
+						<a data-scroll class="nav-link navbar-text-colour" href="#solution">SOLUTION</a>
+					</li>
+					
+					<li class="nav-item">
+						<a data-scroll class="nav-link navbar-text-colour" href="#use">USE CASE</a>
 					</li>
 					
 					<li class="nav-item">
@@ -339,9 +97,9 @@
 			<div id="stars3"></div>
 		</div>
 		<div class="container stars-header-container">
-			<h1 class="stars-header-1">TAKE YOUR AI TO THE STARS WITH</h1>
+			<h1 class="stars-header-1">REACH FOR THE STARS WITH</h1>
 			<h1 class="stars-header-2"><span style="display: inline;">HIGH</span><span style="color: #ef9035; display: inline;">WIND</span></h1>
-			<h2 class="stars-header-1" style="margin-top: 20px;">THE ONLY AI MODEL BENCHMARKING PLATFORM</h2>
+			<h2 class="stars-header-1" style="margin-top: 20px;">THE FASTEST AI SOLUTION MARKETPLACE</h2>
 		</div>
 
 		<div class="container stars-rocket">
@@ -360,7 +118,7 @@
 					</div>
 				</div>
 			</div>
-			<img class="img-astronaut floating" src="/img/space/astronaut.png" alt="Astronaut">
+			<img class="img-astronaut floating lazyload" data-src="/img/space/astronaut.webp" alt="Astronaut">
 		</div>
 
 		<div class="container stars-button-container">
@@ -376,24 +134,113 @@
 <section class="container section-top-portion rad-animation-group" id="solution">
 	<div class="container section-container rad-fade-down">
 		<div class="section-row-media">
+
 			<h1 class="section-header">HOUSTON, WE HAVE A <span
 					style="color: #ef9035; display: inline-block;">SOLUTION</span></h1>
-			
 			<hr class="rounded-separator">
-			
+
 			<p class="section-text">
-				
-				How well does your AI model perform? Is your AI model up to scratch with the competition? Easily benchmark and optimise your AI against
-				the industry's best.
+				Find the right AI solution on the HIGHWIND marketplace for your organisation. Incorporate one or more AI
+				systems to reduce costs, increase revenue, and make smart predictions.
 				<br>
-				
 			</p>
+
+			<p class="section-text">
+				HIGHWIND hosts pre-trained AI solutions for a growing range of industries and are ready to be deployed.
+				<br>
+			</p>
+	
+			<div class="row rad-fade-down card-row">
+				<div class="col card-col">
+					<div class="card card-cent-pos" style="width: 160px; height: 180px; border-radius: 10px;">
+						<img data-src="/img/marketing.webp" class="card-image lazyload" alt="Financial icon" style="width: 80px;">
+						<div class="card-body">
+							<h2 class="section-sub-header-text">FINANCE</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col card-col">
+					<div class="card card-cent-pos" style="width: 160px; height: 180px; border-radius: 10px;">
+						<img data-src="/img/hospital.webp" class="card-image lazyload" alt="Medical icon" style="width: 80px;">
+						<div class="card-body">
+							<h2 class="section-sub-header-text">MEDICAL</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col card-col">
+					<div class="card card-cent-pos" style="width: 160px; height: 180px; border-radius: 10px;">
+						<img data-src="/img/market.webp" class="card-image lazyload" alt="Market icon" style="width: 80px;">
+						<div class="card-body">
+							<h2 class="section-sub-header-text">RETAIL</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col card-col">
+					<div class="card card-cent-pos" style="width: 160px; height: 180px; border-radius: 10px;">
+						<img data-src="/img/research.webp" class="card-image lazyload" alt="Research icon" style="width: 80px;">
+						<div class="card-body">
+							<h2 class="section-sub-header-text">RESEARCH</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col card-col">
+					<div class="card card-cent-pos" style="width: 160px; height: 180px; border-radius: 10px;">
+						<img data-src="/img/export.webp" class="card-image lazyload" alt="World icon" style="width: 80px;">
+						<div class="card-body">
+							<h2 class="section-sub-header-text">LOGISTICS</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<br>
+			<br>
+
+			<p class="section-text">
+				Compare and quantify AI performance with our Faster-Than-Light benchmarking tool against the industry’s
+				best. Save time and money by knowing beforehand if the AI solution is worth deploying.
+			</p>
+
 		</div>
 
 		<div class="section-img-positioning-logos">
-			<img src="/img/logos/azure.png" class="section-img-logos " alt="Azure">
-			<img src="/img/logos/aws.png" class="section-img-logos" alt="AWS">
-			<img src="/img/logos/google-cloud.png" class="section-img-logos " alt="Google Cloud">
+			<img data-src="/img/logos/azure.webp" class="section-img-logos lazyload" alt="Azure">
+			<img data-src="/img/logos/aws.webp" class="section-img-logos lazyload" alt="AWS">
+			<img data-src="/img/logos/google-cloud.webp" class="section-img-logos lazyload" alt="Google Cloud">
+		</div>
+
+</section>
+
+		
+		
+<section class="container section-top-portion rad-animation-group" id="use">
+	<div class="container section-container rad-fade-down">
+		<div class="section-row-media">
+			<h1 class="section-header">CHART A <span
+					style="color: #ef9035; display: inline-block;">COURSE</span></h1>
+			<hr class="rounded-separator">
+			<p class="section-text">
+				How can an AI solution help you? Imagine you have a delivery company and you need to optimise your delivery routes. 
+				<br>
+			</p>
+
+			<div style="margin:auto; text-align:center;">
+				<img src="/img/map.webp" class="" alt="Map of area" style="height: 320px; border-radius: 10px; margin-bottom: 40px;">
+			</div>
+			
+			
+			<p class="section-text" style="margin-bottom: 10px;">
+				You may need to find out:
+			</p>
+			<ul class="section-text" style="color: #ef9035;">
+				<li>Which route is the fastest?</li>
+				<li>Which route is the cheapest?</li>
+				<li>How can I expand my routes?</li>
+			</ul>
+			<p class="section-text">
+				Normally it would take a significant amount of time to reach a decision. Furthermore, should any variables change, you would need to start over. 
+				With an AI solution, it will help you make the best choice in any given scenario.
+			</p>
 		</div>
 	</div>
 
@@ -406,31 +253,28 @@
 	<div class="container section-container">
 		<div class="section-row-media">
 			<h1 class="section-header">YOU'RE THE <span style="color: #ef9035; display: inline-block;">PILOT</span></h1>
-			
 			<hr class="rounded-separator">
 			<p class="section-text">
-				
 				HIGHWIND is designed for all users in mind. Whether you're a professional data scientist or a business
 				owner, make informed and data-driven decisions.
-				
 			</p>
 		</div>
 
 		<div class="row rad-fade-down card-row">
 			<div class="col card-col">
 				<div class="card card-cent-pos">
-					<img src="/img/space/flying.png" class="card-image" alt="Flying astronaut">
+					<img data-src="/img/space/flying.webp" class="card-image lazyload" alt="Flying astronaut">
 					<div class="card-body">
 						<h2 class="section-sub-header-text">FASTER THAN LIGHT</h2>
 						<p class="card-text">
-							Quickly insight on your model's performance. Optimise it for cost savings and higher returns.
+							Quickly gain insight on your model's performance. Optimise it for cost savings and higher returns.
 						</p>
 					</div>
 				</div>
 			</div>
 			<div class="col card-col">
 				<div class="card card-cent-pos">
-					<img src="/img/space/engineer.png" class="card-image" alt="Space engineer">
+					<img data-src="/img/space/engineer.webp" class="card-image lazyload" alt="Space engineer">
 					<div class="card-body">
 						<h2 class="section-sub-header-text">NO ROCKET SCIENCE NEEDED</h2>
 						<p class="card-text">
@@ -441,7 +285,7 @@
 			</div>
 			<div class="col card-col">
 				<div class="card card-cent-pos">
-					<img src="/img/space/satellite.png" class="card-image" alt="Satellite in space">
+					<img data-src="/img/space/satellite.webp" class="card-image lazyload" alt="Satellite in space">
 					<div class="card-body">
 						<h2 class="section-sub-header-text">HEADS UP</h2>
 						<p class="card-text">
@@ -457,7 +301,7 @@
 		<div class="row rad-fade-down card-row">
 			<div class="col card-col">
 				<div class="card card-cent-pos">
-					<img src="/img/space/planetary.png" class="card-image" alt="Computer with reports">
+					<img data-src="/img/space/planetary.webp" class="card-image lazyload" alt="Computer with reports">
 					<div class="card-body">
 						<h2 class="section-sub-header-text">INTELLIGENT REPORTS</h2>
 						<p class="card-text">
@@ -468,7 +312,7 @@
 			</div>
 			<div class="col card-col">
 				<div class="card card-cent-pos">
-					<img src="/img/space/space-shuttle.png" class="card-image" alt="Space shuttle about to launch">
+					<img data-src="/img/space/space-shuttle.webp" class="card-image lazyload" alt="Space shuttle about to launch">
 					<div class="card-body">
 						<h2 class="section-sub-header-text">AUTOMATED DEPLOYMENT</h2>
 						<p class="card-text">
@@ -479,7 +323,7 @@
 			</div>
 			<div class="col card-col">
 				<div class="card card-cent-pos">
-					<img src="/img/space/moon.png" class="card-image" alt="Moon with flag">
+					<img data-src="/img/space/moon.webp" class="card-image lazyload" alt="Moon with flag">
 					<div class="card-body">
 						<h2 class="section-sub-header-text">OPTIMISED SOLUTIONS</h2>
 						<p class="card-text">
@@ -498,15 +342,14 @@
 <section class="container section-mid-portion rad-animation-group" id="marketplace">
 	<div class="container section-container rad-fade-down">
 		<div class="section-row-media">
-			<h1 class="section-header">TAKE PART BY JOINING <span
-					style="color: #ef9035; display: inline-block;">MISSION CONTROL</span></h1>
-			
+			<h1 class="section-header">TAKE PART BY JOINING <span style="color: #ef9035; display: inline-block;">MISSION
+					CONTROL</span></h1>
+
 			<hr class="rounded-separator">
-			
+
 			<p class="section-text">
-				
-				Build, test, buy, and sell your own AI models on the HIGHWIND marketplace. Easily find and compare the best solutions for your organisation.
-				
+				Join our growing community of data scientists in the HIGHWIND marketplace. Build, test, deploy, and sell
+				your AI solutions to other organisations.
 			</p>
 		</div>
 	</div>
@@ -518,8 +361,8 @@
 	<div class="container">
 		<div class="row rad-fade-down section-row-media">
 			<div class="col">
-				<h1 class="section-header">DON'T GET LOST IN <span
-						style="color: #ef9035; display: inline-block;">SPACE</span></h1>
+				<h1 class="section-header">LIVE LONG AND <span
+						style="color: #ef9035; display: inline-block;">PROSPER</span></h1>
 				
 				<hr class="rounded-separator">
 				
@@ -587,9 +430,6 @@
 		
 	</div>
 
-
-
-
 	<footer class="footer">
 	<div class="container">
 		<div class="row">
@@ -607,7 +447,7 @@
 				<p class="footer-text">
 					World and rocket animation made by <a href="http://codepen.io/superoak" title="Codepen Superoak" class="footer-text">Luiz Otávio</a>.
 				</p>
-				
+				<a href="https://www.freepik.com/vectors/city-map" class="footer-text">City map vector created by macrovector - www.freepik.com</a>
 			</div>
 
 			<div class="col-md" style="padding: 20px;">
@@ -622,7 +462,7 @@
 		</div>
 	</div>
 </footer>
-    <script src='https://highwind.ai/js/rad-animations.js'></script>
+	<script src='https://highwind.ai/js/rad-animations.min.js'></script>
 <script src='https://highwind.ai/js/library/lozad.min.js'></script>
 <script>
   window.addEventListener("load", function() {
@@ -633,11 +473,13 @@
     observer.observe();
   });
 </script>
-<script src='https://highwind.ai/js/library/jquery-3.3.1.slim.min.js'></script>
+<script src='https://highwind.ai/js/library/jquery-3.6.0.min.js'></script>
+
 <script src='https://highwind.ai/js/library/bootstrap.min.js'></script>
-<script src='https://highwind.ai/js/sticky-header.js'></script>
+<script src='https://highwind.ai/js/sticky-header.min.js'></script>
 <script src='https://highwind.ai/js/library/smooth-scroll.polyfills.min.js'></script>
-<script src='https://highwind.ai/js/library/fontfaceobserver.js'></script>
+<script src='https://highwind.ai/js/library/fontfaceobserver.min.js'></script>
+<script src='https://highwind.ai/js/library/lazysizes.min.js'></script>
 <script>
   (function(w) {
     
@@ -677,6 +519,244 @@
     })
 </script>
 
+
+<script>
+  $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".navbar-text-colour");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+  });
+
+  $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".navbar-toggle-colour");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+  });
+
+  $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".nav-text-logo-left");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+  });
+
+  $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".nav-text-logo-right");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+  });
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EM309E0J9C"></script>
+<script async> 
+window.dataLayer = window.dataLayer || [];
+
+function gtag() {
+  dataLayer.push(arguments);
+}
+gtag('js', new Date());
+
+gtag('config', 'G-EM309E0J9C');
+</script>
+
+
+	<style>
+		 
+		 
+		.rad-fade-in {
+			will-change: opacity, transform;
+			animation-name: rad-fade-in-fallback;
+			animation-duration: 5s;
+			animation-fill-mode: both;
+		}
+
+		@keyframes rad-fade-in-fallback {
+			0% {
+				opacity: 0;
+			}
+
+			75% {
+				opacity: 0;
+			}
+
+			100% {
+				opacity: 1;
+			}
+		}
+
+		.fonts-loaded .rad-fade-in.rad-waiting {
+			animation-name: none;
+			opacity: 0;
+		}
+
+		.fonts-loaded .rad-fade-in.rad-animate {
+			animation-name: rad-fade-in;
+			animation-duration: 1.1s;
+			animation-fill-mode: both;
+		}
+
+		@keyframes rad-fade-in {
+			0% {
+				opacity: 0;
+			}
+
+			100% {
+				opacity: 1;
+			}
+		}
+
+		 
+		.rad-fade-in-long {
+			will-change: opacity, transform;
+			animation-name: rad-fade-in-long-fallback;
+			animation-duration: 8s;
+			animation-fill-mode: both;
+		}
+
+		@keyframes rad-fade-in-long-fallback {
+			0% {
+				opacity: 0;
+			}
+
+			75% {
+				opacity: 0;
+			}
+
+			100% {
+				opacity: 1;
+			}
+		}
+
+		.fonts-loaded .rad-fade-in-long.rad-waiting {
+			animation-name: none;
+			opacity: 0;
+		}
+
+		.fonts-loaded .rad-fade-in-long.rad-animate {
+			animation-name: rad-fade-in-long;
+			animation-duration: 2s;
+			animation-fill-mode: both;
+		}
+
+		@keyframes rad-fade-in-long {
+			0% {
+				opacity: 0;
+			}
+
+			20% {
+				opacity: 0;
+			}
+
+			100% {
+				opacity: 1;
+			}
+		}
+
+		 
+		.rad-fade-down {
+			will-change: opacity, transform;
+			animation-name: rad-fade-down-fallback;
+			animation-duration: 5s;
+			animation-fill-mode: both;
+			transform: translateY(-30px);
+		}
+
+		@keyframes rad-fade-down-fallback {
+			0% {
+				opacity: 0;
+				transform: translateY(-30px);
+			}
+
+			75% {
+				opacity: 0;
+				transform: translateY(-30px);
+			}
+
+			100% {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		.fonts-loaded .rad-fade-down.rad-waiting {
+			animation-name: none;
+			opacity: 0;
+			transform: translateY(-30px);
+		}
+
+		.fonts-loaded .rad-fade-down.rad-animate {
+			animation-name: rad-fade-down;
+			animation-duration: 1.1s;
+		}
+
+		@keyframes rad-fade-down {
+			0% {
+				opacity: 0;
+				transform: translateY(-30px);
+			}
+
+			100% {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		 
+		.rad-scale-down {
+			will-change: opacity, transform;
+			animation-name: rad-scale-down-fallback;
+			animation-duration: 5s;
+			animation-fill-mode: both;
+			transform-origin: 50% 0;
+		}
+
+		@keyframes rad-scale-down-fallback {
+			0% {
+				opacity: 0;
+				transform: scaleY(0.95);
+			}
+
+			75% {
+				opacity: 0;
+				transform: scaleY(0.95);
+			}
+
+			100% {
+				opacity: 1;
+				transform: scaleY(1);
+			}
+		}
+
+		.fonts-loaded .rad-scale-down.rad-waiting {
+			animation-name: none;
+			opacity: 0;
+			transform: scaleY(0.95);
+		}
+
+		.fonts-loaded .rad-scale-down.rad-animate {
+			animation-name: rad-scale-down;
+			animation-duration: 1.1s;
+			animation-fill-mode: both;
+		}
+
+		@keyframes rad-scale-down {
+			0% {
+				opacity: 0;
+				transform: scaleY(0.95);
+			}
+
+			100% {
+				opacity: 1;
+				transform: scaleY(1);
+			}
+		}
+	</style>
+
+	
 </body>
 
 </html>
