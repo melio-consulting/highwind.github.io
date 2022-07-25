@@ -1,8 +1,9 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap);
+/* @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Anek+Odia:wght@700&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Akshar:wght@400;500&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Anek+Telugu&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Square+Peg&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Square+Peg&display=swap); */
+@import url(https://fonts.googleapis.com/css2?family=PT+Mono&family=PT+Sans+Caption:wght@400;700&family=PT+Sans:wght@400;700&display=swap);
 
 [id]::before {
     content: '';
@@ -70,13 +71,24 @@
 .btn-background {
     background-color: #e5a83a;
 }
+.btn-background-blue {
+    background-color: #374655;
+}
+.btn-background-red {
+    background-color: #942025;
+}
 
 .btn-background:hover {
     box-shadow: 0 0 10px 4px #ca5a56;
 }
+.btn-background-red:hover {
+    box-shadow: 0 0 10px 4px #e5a83a;
+}
 
 .btn-text {
     font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 200;
     color: #fff !important;
 }
 
@@ -105,21 +117,22 @@
     padding-bottom: 15px
 }
 
-.stars-header-1,
+.stars-header-1 {
+    color: #fff;
+    margin: 50px 0 0 0;
+    font-family: 'PT Sans Caption', 'Anek Telugu', sans-serif;
+    font-size: 64px;
+}
+
 .stars-header-2,
 .stars-header-3 {
     color: #fff;
     margin: 0
 }
 
-.stars-header-1,
 .stars-header-3 {
     font-family: 'Anek Telugu', sans-serif;
-    font-size: 28px;
-}
-
-.stars-header-1 {    
-    margin: 50px 0 0 0;
+    font-size: 60;
 }
 
 .stars-header-3 {
@@ -129,6 +142,40 @@
 .stars-header-2 {
     font-family: Akshar, sans-serif;
     font-size: 60px
+}
+
+.stars-header-5 {
+    font-family: 'PT Mono', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 100;
+    line-height: 34px;
+    margin: 30px
+}
+.stars-header-6 {
+    font-family: 'PT Mono', sans-serif;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 100;
+    margin: 60px;
+    text-align: center;
+    line-height: 48px
+}
+
+.highwind-white {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 800;
+    font-style: italic
+}
+
+.highwind-orange {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 24px;
+    color: #e5a83a;
+    font-weight: 800;
+    font-style: italic
 }
 
 .stars-rocket {
@@ -144,7 +191,7 @@
 
 .stars-button-container {
     text-align: center;
-    margin-top: 270px;
+    margin-top: 220px;
 }
 
 .highwind-logo {
@@ -183,7 +230,7 @@
 }
 
 .rounded-separator-logo {
-    border-top: 3px dashed #ca5a56;
+    border-top: 3px dashed #942025;
     width: 600px;
     margin-top: 25px;
 }
@@ -201,7 +248,7 @@
 .section-text-use,
 .section-header-use {
     color: #fff;
-    font-family: 'Anek Telugu', sans-serif
+    font-family: 'PT Sans', 'Anek Telugu', sans-serif
 }
 
 .section-header {
@@ -236,8 +283,8 @@
 }
 
 .section-text {
-    font-size: 26px;
-    font-weight: 300;
+    font-size: 24px;
+    font-weight: 100;
     line-height: 34px
 }
 
@@ -344,7 +391,8 @@
 }
 
 .card-image {
-    width: 100px;
+    /* width: 100px; */
+    max-width: 60%;
     margin: auto;
     padding-top: 24px;
 }
