@@ -73,9 +73,10 @@
 		<div class="row align-items-center">
 			<div class="col-3 text-center">
 				<p class="section-text">Want to share your AI with the world?</p>
-				<a href="#sign-up-sell" class="btn btn-large btn-background-blue btn-rounded">
+        <button type="button" class="btn btn-large btn-background-blue btn-rounded" data-toggle="modal"
+          data-target="#mailinglist-modal-sell">
 					<span class="btn-text">&nbsp; Sign up to start selling!&nbsp; </span>
-				</a>
+        </button>
 			</div>
 			<div class="col-6 text-center">
 				<div style="text-align: center;">
@@ -84,9 +85,121 @@
 			</div>
 			<div class="col-3 text-center">
 				<p class="section-text">Want to buy an AI use case for your company? </p>
-				<a href="#sign-up-buy" class="btn btn-large btn-background-red btn-rounded">
-					<span class="btn-text">&nbsp; Join waitlist to get notified! &nbsp;</span>
-				</a>
+        <button type="button" class="btn btn-large btn-background-red btn-rounded" data-toggle="modal"
+          data-target="#mailinglist-modal-buy">
+					<span class="btn-text">&nbsp; Join the waitlist to get notified! &nbsp;</span>
+        </button>
+			</div>
+		</div>
+	</div>
+
+	
+	<div class="container d-flex justify-content-center">
+		<div id="mailinglist-modal-buy" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog  modal-dialog-centered justify-content-center " role="document">
+				<div class="modal-content  border-0 mx-3">
+					<div class="modal-body  p-0">
+						<div class="card">
+							<div class="card-header pb-0 border-0">
+								<div class="card-body pt-0">
+									<div class="section-text-use text-center" style="margin-top:20px">
+										<div class="row justify-content-center">
+                      <div class="col-sm-9">
+                        <h3>
+                          Join our waitlist:
+                        </h3>
+                        <p>
+                          We will only use your information to communicate your current status on our waitlist.
+                        </p>
+                      </div>
+										</div>
+                    <div class="row justify-content-center">
+                      <div clas="col-sm-9 mt-3">
+
+                        <form target="_blank" action="https://formsubmit.co/f0e7371aec372f5906f3052c9ed0d46e" method="POST">
+                          <div class="form-group">
+                            <label for="mailinglistName">Name</label>
+                            <input class="form-control" type="text" name="name" id="mailinglistName" />
+                          </div>
+                          <div class="form-group">
+                            <label for="mailinglistEmail">Email</label>
+                            <input class="form-control" type="email" name="email" id="mailinglistEmail" />
+                            <small class="form-text text-muted">We will not share your email with anyone else.</small>
+                          </div>
+                          <input type="hidden" name="mailinglistType" value="buyer">
+                          <button type="submit" class="btn btn-background btn-rounded"
+                            style="margin-top:30px;" data-toggle="modal" data-target="#sign-up-modal">
+                            <span class="btn-text" style="font-size: 16px;">&nbsp; Join
+                              &nbsp;</span>
+                          </button>
+                        </form>
+
+                      </div>
+                    </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<div class="container d-flex justify-content-center">
+		<div id="mailinglist-modal-sell" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog  modal-dialog-centered justify-content-center " role="document">
+				<div class="modal-content  border-0 mx-3">
+					<div class="modal-body  p-0">
+						<div class="card">
+							<div class="card-header pb-0 border-0">
+								<div class="card-body pt-0">
+									<div class="section-text-use text-center" style="margin-top:20px">
+										<div class="row justify-content-center">
+                      <div class="col-sm-9">
+                        <h3>
+                          Join our waitlist:
+                        </h3>
+                        <p>
+                          We will only use your information to communicate your current status on our waitlist.
+                        </p>
+                      </div>
+										</div>
+                    <div class="row justify-content-center">
+                      <div clas="col-sm-9 mt-3">
+
+                        <form target="_blank" action="https://formsubmit.co/f0e7371aec372f5906f3052c9ed0d46e" method="POST">
+                          <div class="form-group">
+                            <label for="mailinglistName">Name</label>
+                            <input class="form-control" type="text" name="name" id="mailinglistName" />
+                          </div>
+                          <div class="form-group">
+                            <label for="mailinglistEmail">Email</label>
+                            <input class="form-control" type="email" name="email" id="mailinglistEmail" />
+                            <small class="form-text text-muted">We will not share your email with anyone else.</small>
+                          </div>
+                          <div class="form-group">
+                            <label for="mailinglistInvite">Invite Code</label>
+                            <input class="form-control" type="text" name="inviteCode" id="mailinglistInvite" />
+                            <small class="form-text text-muted">Enter your invite code if you have one.</small>
+                          </div>
+                          <input type="hidden" name="mailinglistType" value="seller">
+                          <button type="submit" class="btn btn-background btn-rounded"
+                            style="margin-top:30px;" data-toggle="modal" data-target="#sign-up-modal">
+                            <span class="btn-text" style="font-size: 16px;">&nbsp; Join
+                              &nbsp;</span>
+                          </button>
+                        </form>
+
+                      </div>
+                    </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
