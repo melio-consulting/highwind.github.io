@@ -547,10 +547,9 @@ gtag('config', 'G-EM309E0J9C');
        }
        return(false);
     }
-    console.log("Current selected industry is: "+getQueryVariable("industry"));
     $('#mailinglist-modal-sell').on('show.bs.modal', function (e) {
       document.getElementById("mailinglistIndustrySell").value = getQueryVariable("industry")
-    });
+    })
     $('#mailinglist-modal-buy').on('show.bs.modal', function (e) {
       document.getElementById("mailinglistIndustryBuy").value = getQueryVariable("industry")
     })
