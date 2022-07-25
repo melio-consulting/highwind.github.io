@@ -127,7 +127,7 @@
                             <small class="form-text text-muted">We will not share your email with anyone else.</small>
                           </div>
                           <input type="hidden" name="mailinglistType" value="buyer">
-                          <input type="hidden" name="mailinglistIndustry" id="mailinglistIndustry">
+                          <input type="hidden" name="mailinglistIndustry" id="mailinglistIndustryBuy">
                           <button type="submit" class="btn btn-background btn-rounded"
                             style="margin-top:30px;" data-toggle="modal" data-target="#sign-up-modal">
                             <span class="btn-text" style="font-size: 16px;">&nbsp; Join
@@ -186,7 +186,7 @@
                             <small class="form-text text-muted">Enter your invite code if you have one.</small>
                           </div>
                           <input type="hidden" name="mailinglistType" value="seller">
-                          <input type="hidden" name="mailinglistIndustry" id="mailinglistIndustry">
+                          <input type="hidden" name="mailinglistIndustry" id="mailinglistIndustrySell">
                           <button type="submit" class="btn btn-background btn-rounded"
                             style="margin-top:30px;" data-toggle="modal" data-target="#sign-up-modal">
                             <span class="btn-text" style="font-size: 16px;">&nbsp; Join
@@ -547,8 +547,13 @@ gtag('config', 'G-EM309E0J9C');
        }
        return(false);
     }
-    console.log("Current selected industry is: "+getQueryVariable("industry"))
-    document.getElementById("mailinglistIndustry").value = getQueryVariable("industry")
+    console.log("Current selected industry is: "+getQueryVariable("industry"));
+    $('#mailinglist-modal-sell').on('show.bs.modal', function (e) {
+      document.getElementById("mailinglistIndustrySell").value = getQueryVariable("industry")
+    });
+    $('#mailinglist-modal-buy').on('show.bs.modal', function (e) {
+      document.getElementById("mailinglistIndustryBuy").value = getQueryVariable("industry")
+    })
   </script>
 
 </body>
