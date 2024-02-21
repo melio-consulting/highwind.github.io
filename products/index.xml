@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>HIGHWIND</title>
-    <link>https://highwind.ai/</link>
-    <description>Recent content on HIGHWIND</description>
+    <title>Products on HIGHWIND</title>
+    <link>https://highwind.ai/products/</link>
+    <description>Recent content in Products on HIGHWIND</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://highwind.ai/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://highwind.ai/products/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Malawian ID and Selfie Verification Service</title>
       <link>https://highwind.ai/products/76e5a48d/</link>

@@ -898,3 +898,15 @@
         margin-top: 25px;
     }
 }
+
+.pricing-page {
+  min-height: 100vh;
+}
+
+.pricing-page-container {
+    min-height: 100vh;
+}
+
+.text-orange {
+    color: #ec7939 !important;
+}
