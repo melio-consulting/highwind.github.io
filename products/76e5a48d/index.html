@@ -27,8 +27,19 @@
     <meta name="robots" content="noindex">
 </head>
 
-<body class="pricing-page">
-    <div class="container-fluid separator pricing-page-container">
+<body class="min-vh-100">
+    <header class="header fixed-top rad-animation-group" id="header">
+    <div class="container rad-fade-in">
+        <nav class="navbar navbar-light">
+            <a class="navbar-brand nav-text navbar-text-colour" href="https://highwind.ai/">
+                <img src="/img/logos/highwind_logo.png" alt="Highwind rocket logo" style="height: 40px;">
+            </a>
+        </nav>
+    </div>
+</header>
+
+
+    <div class="container-fluid separator min-vh-100">
         <div class="my-5">
             <div class="row">
                 <div class="col-12 col-md-6 offset-md-3">
@@ -46,11 +57,32 @@
         <div class="row text-center">
             <div class="col-12">
                 <p class="text-white">By subscribing to this product, I acknowledge that I have read and agree
-                    to the <a href="/docs/cloud_service_agreement.pdf" class="text-orange" download>cloud service
+                    to the <a href="/products/cloud_service_agreement" class="text-orange" target="_blank">cloud service
                         agreement</a>.</p>
             </div>
         </div>
     </div>
+
+    <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md text-center p-2">
+    <img src="/img/logos/highwind_logo.png" alt="Highwind rocket logo" style="height: 40px;">
+</div>
+
+            <div class="col-md p-2 text-muted">
+    <h5 class="footer-header"><a href="https://www.melio.ai" title="Melio AI" class="footer-text">Powered by
+            Melio AI</a></h1>
+        <p class="footer-text">
+            Melio AI specialises in developing and deploying machine learning solutions at scale. Melio has
+            experience in banking, insurance & healthcare industries, and we are partnering with other
+            experts to bring you the best AI use-case for your data.
+        </p>
+</div>
+
+        </div>
+    </div>
+</footer>
 
     <script src='https://highwind.ai/js/rad-animations.min.js'></script>
 <script src='https://highwind.ai/js/library/lozad.min.js'></script>
