@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Industries on HIGHWIND</title>
+    <link>https://highwind.ai/industries/</link>
+    <description>Recent content in Industries on HIGHWIND</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://highwind.ai/industries/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Finance</title>
+      <link>https://highwind.ai/industries/finance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://highwind.ai/industries/finance/</guid>
+      <description>AI Use Cases in Financial Services 1. Identity Document Validation and Data Extraction 2. Customer support chatbot using LLMs 3. Product recommender for banking products and services 4. Early warning and churn detection 5. Behavioural customer segmentation 1. Identity Document Validation and Data Extraction Streamline your customer verification process by using AI to classify, validate and extract data from identity documents such as passports, driver&amp;rsquo;s licenses, and national ID cards in most countries.</description>
+    </item>
+  </channel>
+</rss>
