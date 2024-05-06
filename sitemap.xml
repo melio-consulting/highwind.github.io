@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://highwind.ai/attributions/</loc>
+  </url><url>
     <loc>https://highwind.ai/categories/</loc>
   </url><url>
     <loc>https://highwind.ai/coming-soon/</loc>
@@ -15,6 +17,8 @@
     <loc>https://highwind.ai/products/76e5a48d/</loc>
   </url><url>
     <loc>https://highwind.ai/products/cloud_service_agreement/</loc>
+  </url><url>
+    <loc>https://highwind.ai/privacy/</loc>
   </url><url>
     <loc>https://highwind.ai/products/</loc>
   </url><url>
