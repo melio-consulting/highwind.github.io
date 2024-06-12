@@ -4,22 +4,26 @@
     <title>Products on HIGHWIND</title>
     <link>https://highwind.ai/products/</link>
     <description>Recent content in Products on HIGHWIND</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="https://highwind.ai/products/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://highwind.ai/products/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Malawian ID and Selfie Verification Service</title>
       <link>https://highwind.ai/products/76e5a48d/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>https://highwind.ai/products/76e5a48d/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>Melio AI: Cloud Service Agreement</title>
       <link>https://highwind.ai/products/cloud_service_agreement/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>https://highwind.ai/products/cloud_service_agreement/</guid>
-      <description>Melio AI, Inc. Cloud Service Agreement This Agreement has 3 parts: (1) the Order Form and (2) the Key Terms, both of which are on the Cover Page, and (3) the Common Paper Cloud Service Standard Terms Version 1.1 posted at commonpaper.com/standards/cloud-service-agreement/1.1 (“Standard Terms”), which is incorporated by reference. If there is any inconsistency between the parts of the Agreement, the part listed earlier will control over the part listed later for that inconsistency.</description>
+      <description>Melio AI, Inc. Cloud Service Agreement This Agreement has 3 parts: (1) the Order Form and (2) the Key Terms, and (3) the Common Paper Cloud Service Standard Terms Version 2.0 posted at commonpaper.com/standards/cloud-service-agreement/2.0 (“Standard Terms”).
+If there is any inconsistency between the parts of the Agreement, the part listed earlier will control over the part listed later for that inconsistency. Capitalized and highlighted words have the meanings given on this Page.</description>
     </item>
+    
   </channel>
 </rss>
