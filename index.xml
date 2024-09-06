@@ -4,7 +4,7 @@
     <title>HIGHWIND</title>
     <link>https://highwind.ai/</link>
     <description>Recent content on HIGHWIND</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <atom:link href="https://highwind.ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -13,6 +13,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://highwind.ai/industries/finance/</guid>
       <description>AI Use Cases in Financial Services 1. Identity Document Validation and Data Extraction 2. Customer support chatbot using LLMs 3. Product recommender for banking products and services 4. Early warning and churn detection 5. Behavioural customer segmentation 1. Identity Document Validation and Data Extraction Streamline your customer verification process by using AI to classify, validate and extract data from identity documents such as passports, driver&amp;rsquo;s licenses, and national ID cards in most countries.</description>
+    </item>
+    <item>
+      <title>Intelligent Document Automation</title>
+      <link>https://highwind.ai/products/f943b747/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://highwind.ai/products/f943b747/</guid>
+      <description></description>
     </item>
     <item>
       <title>Malawian ID and Selfie Verification Service</title>
@@ -26,7 +33,8 @@
       <link>https://highwind.ai/products/cloud_service_agreement/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://highwind.ai/products/cloud_service_agreement/</guid>
-      <description>Melio AI, Inc. Cloud Service Agreement This Agreement has 3 parts: (1) the Order Form and (2) the Key Terms, and (3) the Common Paper Cloud Service Standard Terms Version 2.0 posted at commonpaper.com/standards/cloud-service-agreement/2.0 (“Standard Terms”).&#xA;If there is any inconsistency between the parts of the Agreement, the part listed earlier will control over the part listed later for that inconsistency. Capitalized and highlighted words have the meanings given on this Page.</description>
+      <description>Melio AI, Inc. Cloud Service Agreement This Agreement has 3 parts: (1) the Order Form and (2) the Key Terms, and (3) the Common Paper Cloud Service Standard Terms Version 2.0 posted at commonpaper.com/standards/cloud-service-agreement/2.0 (“Standard Terms”).
+If there is any inconsistency between the parts of the Agreement, the part listed earlier will control over the part listed later for that inconsistency. Capitalized and highlighted words have the meanings given on this Page.</description>
     </item>
     <item>
       <title>Privacy</title>
